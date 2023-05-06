@@ -28,10 +28,17 @@
         </header>
 
         <div class="content p-16">
-            <h1>Surprise</h1>
-            <p>Imagine a random comic.</p>
+            <h1>Surprise Comic</h1>
+            <img src="" name="canvas" />
         </div>
     </div>
+
+
+    <script>
+        var imagesArray = ['allesschoen.jpg', 'fernsehennachdenken.jpg', 'freie zeit verlernt.jpg', 'Nachrichten (1).jpg', 'Nachrichten (2).jpg', 'Nachrichten (3).jpg', 'Nachrichten (4).jpg', 'Praxistipp für mehr Menschlichkeit (1).jpg', 'Praxistipp für mehr Menschlichkeit (2).jpg', 'suche nette worte.jpg', 'the perfect bed.jpg', 'Wandern.jpg', 'Wartezimmer.jpg', 'Weichhaardino.jpg', 'Wochenende.jpg', 'zuviel.jpg'];
+            var num = Math.floor(Math.random() * (imagesArray.length+1));
+            document.canvas.src = "comics/" + imagesArray[num];
+    </script>
   </body>
 </html> 
   
