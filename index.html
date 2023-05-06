@@ -47,7 +47,7 @@
             <div class="filter-buttons inline-block" >
                 <button class="btn btn-outline btn-success" data-filter="Coffee">Coffee</button>
                 <button class="btn btn-outline btn-success" data-filter="TV">TV</button>
-                <button class="btn btn-outline btn-success" data-filter="angry">angry</button>
+                <button class="btn btn-outline btn-success" data-filter="wait">wait</button>
                 <button class="btn btn-outline btn-success" data-filter="Beauty">Beauty</button>
                 <button class="btn btn-outline btn-success" data-filter="Nachrichten">Nachrichten</button>
                 <button class="btn btn-outline btn-success" data-filter="Dino">Dino</button>
@@ -264,7 +264,33 @@
                 </div>
             </div>
 
+             <!-- The button to open Pop up -->
+             <label for="my-modal-9"  class="image">
+                <a class="relative group">
+                    <img src="comics/Wartezimmer.jpg" alt="Image 2"  width="200" height="200" data-keywords="wait">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
 
+            <!-- Pop up -->
+            <input type="checkbox" id="my-modal-9" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Comic Title</h3>
+                    <img src="comics/Wartezimmer.jpg" alt="Image 2" >
+                    <p class="pt-4">Description of the comic </p> <br />
+                    <p class="">
+                        Keywords: <span class="modal-image-keywords"></span>
+                    </p>
+                    <div class="modal-action absolute right-0 top-0 mt-5 mr-5">
+                        <label for="my-modal-9" class="btn">X</label>
+                    </div>
+                </div>
+            </div>
          </div>
 
     </div>
