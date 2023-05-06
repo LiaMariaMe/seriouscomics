@@ -21,7 +21,7 @@ filterButtons.forEach(function(button) {
     // Loop through each image and check if it has the filter keyword
     images.forEach(function(image) {
       var keywords = image.querySelector('img').getAttribute('data-keywords');
-      var keywordArray = keywords.split(','); // Split the keywords into an array
+      var keywordArray = keywords.split(', '); // Split the keywords into an array
       var keywordSpan = image.querySelector('.image-keywords');
 
       if (keywordArray.includes(filterKeyword)) {
