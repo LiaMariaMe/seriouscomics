@@ -1,0 +1,21 @@
+/*a{background-image: url("comics/buttonhintergrund.jpg");}*/
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button {
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("comics/buttonhintergrund.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .button span {
+    position: relative;
+    z-index: 1;
+  }
