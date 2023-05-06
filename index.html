@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="wrapper w-full max-w-5xl mx-auto">
+<div class="wrapper w-full mx-auto">
     <header style="position: relative; background-color: white;">
         <img src="comics/headergerahmt.jpg" alt="Header Image" class="mx-auto">
         <div class="button-container">
@@ -32,20 +32,20 @@
     <div class="content p-16">
         <p class="py-7 text-center"> <strong> Comics </strong><br /> </p>
 
-        <div class="filter-buttons">
-            <button class="btn btn-outline btn-success" data-filter="Monster">Monster</button>
-            <button class="btn btn-outline btn-success" data-filter="Girl">Girl</button>
-            <button class="btn btn-outline btn-success" data-filter="Planet">Planet</button>
-            <button class="btn btn-outline btn-success" data-filter="Batman">Batman</button>
-            <button class="btn btn-outline btn-success" data-filter="Action">Action</button>
-            <button class="btn btn-outline btn-success" data-filter="Spiderman">Spiderman</button>
+        <div class="filter-buttons inline-block" >
+            <button class="btn btn-outline btn-success" data-filter="Coffee">Coffee</button>
+            <button class="btn btn-outline btn-success" data-filter="TV">TV</button>
+            <button class="btn btn-outline btn-success" data-filter="Beauty">Beauty</button>
+            <button class="btn btn-outline btn-success" data-filter="Give up">Give up</button>
+            <button class="btn btn-outline btn-success" data-filter="Confused">Confused</button>
+            <button class="btn btn-outline btn-success" data-filter="Clean">Clean</button>
             <button class="btn btn-outline btn-success" data-filter="Flying">Flying</button>
             <button class="btn btn-outline btn-success" data-filter="Thor">Thor</button>
             <button class="btn btn-outline btn-success" data-filter="Fire">Fire</button>
         </div>
 
 
-        <button class="btn btn-outline btn-error" id="remove-filters">Remove Filters</button>
+        <button class="btn btn-outline btn-error inline-block" id="remove-filters">Remove Filters</button>
 
         <div id="selected-filter"></div>
         <br />
@@ -55,7 +55,7 @@
             <!-- The button to open Pop up -->
             <label for="my-modal-1" class="image" >
                 <a class="relative group">
-                    <img src="Assets/pic1.jpg" alt="Image 2"  width="200" height="200" data-keywords="Monster,Girl,Planet">
+                    <img src="comics/allesschoen.jpg" alt="Image 2"  width="200" height="200" data-keywords="Coffee, Beauty">
                     <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
                         <p class="py-4 text-center">
                             Keywords: <span class="image-keywords"></span>
@@ -70,7 +70,7 @@
             <div class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">Comic Title</h3>
-                    <img src="Assets/pic1.jpg" alt="Image 2" >
+                    <img src="comics/allesschoen.jpg" alt="Image 2" >
                     <p class="py-4">Description of the comic </p> <br />
                     <p class="py-4">
                         Keywords: <span class="modal-image-keywords"></span>
@@ -81,10 +81,11 @@
                 </div>
             </div>
 
+
             <!-- The button to open Pop up -->
             <label for="my-modal-2"  class="image" >
                 <a class="relative group">
-                    <img src="Assets/pic2.jpg" alt="Image 2"  width="200" height="200" data-keywords="Monster,Batman,Action">
+                    <img src="comics/fernsehennachdenken.jpg" alt="Image 2"  width="200" height="200" data-keywords="TV, Give up">
                     <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
                         <p class="py-4 text-center">
                             Keywords: <span class="image-keywords"></span>
@@ -93,13 +94,12 @@
                 </a>
             </label>
 
-
             <!-- Pop up -->
             <input type="checkbox" id="my-modal-2" class="modal-toggle" />
             <div class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">Comic Title</h3>
-                    <img src="Assets/pic2.jpg" alt="Image 2" >
+                    <img src="comics/fernsehennachdenken.jpg" alt="Image 2" >
                     <p class="py-4">Description of the comic </p> <br />
                     <p class="py-4">
                         Keywords: <span class="modal-image-keywords"></span>
@@ -113,7 +113,7 @@
             <!-- The button to open Pop up -->
             <label for="my-modal-3"  class="image">
                 <a class="relative group">
-                    <img src="Assets/pic3.jpg" alt="Image 2"  width="200" height="200" data-keywords="Spiderman,Flying,Action">
+                    <img src="comics/freie%20zeit%20verlernt.jpg" alt="Image 2"  width="200" height="200" data-keywords="Confused, Clean">
                     <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
                         <p class="py-4 text-center">
                             Keywords: <span class="image-keywords"></span>
@@ -128,7 +128,7 @@
             <div class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">Comic Title</h3>
-                    <img src="Assets/pic3.jpg" alt="Image 2" >
+                    <img src="comics/freie%20zeit%20verlernt.jpg" alt="Image 2" >
                     <p class="py-4">Description of the comic </p> <br />
                     <p class="py-4">
                         Keywords: <span class="modal-image-keywords"></span>

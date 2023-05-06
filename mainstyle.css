@@ -12,13 +12,11 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
-  
-  .content{
-    background-image: url("comics/bodygerahmt.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
 
   h1{
     font-size: 2rem !important;
+  }
+
+  body{
+    background-color : white;
   }
