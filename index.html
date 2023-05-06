@@ -15,7 +15,7 @@
     .image {
         background-image: url('comics/bodygerahmt.jpg');
         background-size: 100% 100%;
-        padding : 15px;
+        padding : 18px;
     }
 </style>
 
@@ -40,23 +40,26 @@
     </header>
 
     <div class="content p-16">
+
         <p class="py-7 text-center"> <strong> Comics </strong><br /> </p>
+        <div class = "flex">
 
-        <div class="filter-buttons inline-block" >
-            <button class="btn btn-outline btn-success" data-filter="Coffee">Coffee</button>
-            <button class="btn btn-outline btn-success" data-filter="TV">TV</button>
-            <button class="btn btn-outline btn-success" data-filter="Beauty">Beauty</button>
-            <button class="btn btn-outline btn-success" data-filter="Give up">Give up</button>
-            <button class="btn btn-outline btn-success" data-filter="Confused">Confused</button>
-            <button class="btn btn-outline btn-success" data-filter="Nachrichten">Nachrichten</button>
-            <button class="btn btn-outline btn-success" data-filter="Dino">Dino</button>
-            <button class="btn btn-outline btn-success" data-filter="TV">TV</button>
+            <div class="filter-buttons inline-block" >
+                <button class="btn btn-outline btn-success" data-filter="Coffee">Coffee</button>
+                <button class="btn btn-outline btn-success" data-filter="TV">TV</button>
+                <button class="btn btn-outline btn-success" data-filter="Beauty">Beauty</button>
+                <button class="btn btn-outline btn-success" data-filter="Give up">Give up</button>
+                <button class="btn btn-outline btn-success" data-filter="Confused">Confused</button>
+                <button class="btn btn-outline btn-success" data-filter="Clean">Clean</button>
+                <button class="btn btn-outline btn-success" data-filter="Nachrichten">Nachrichten</button>
+                <button class="btn btn-outline btn-success" data-filter="Thor">Dino</button>
+                <button class="btn btn-outline btn-success" data-filter="TV">TV</button>
+            </div>
+
+
+            <button class="btn btn-outline btn-error inline-block ml-1.5" id="remove-filters ">Remove Filters</button>
+
         </div>
-
-
-        <button class="btn btn-outline btn-error inline-block" id="remove-filters">Remove Filters</button>
-
-        <div id="selected-filter"></div>
         <br />
 
         <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 justify-items-center w-full">
@@ -94,7 +97,7 @@
             <!-- The button to open Pop up -->
             <label for="my-modal-2"  class="image" >
                 <a class="relative group">
-                    <img src="comics/fernsehennachdenken.jpg" alt="Image 2"  width="200" height="200" data-keywords="TV, Give up, Confused">
+                    <img src="comics/fernsehennachdenken.jpg" alt="Image 2"  width="200" height="200" data-keywords="TV, Give up">
                     <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
                         <p class="py-4 text-center">
                             Keywords: <span class="image-keywords"></span>
@@ -265,6 +268,19 @@
                     </div>
                 </div>
             </div>
+
+            <!-- The button to open Pop up -->
+            <label for="my-modal-3"  class="image">
+                <a class="relative group">
+                    <img src="comics/Weichhaardino.jpg" alt="Image 2"  width="200" height="200" data-keywords="Cute, Dino">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
+        </div>
 
     </div>
 </div>
