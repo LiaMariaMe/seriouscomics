@@ -1,6 +1,5 @@
 var images = document.querySelectorAll('.image');
 var modalKeywords = document.querySelectorAll('.modal-image-keywords');
-var selectedFilter = document.querySelector('#selected-filter');
 
 images.forEach(function(image, index) {
     var keywords = image.querySelector('img').getAttribute('data-keywords');
