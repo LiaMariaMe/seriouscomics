@@ -10,204 +10,227 @@
 </head>
 <body>
 
-    <p class="py-7 text-center"> <strong> Comics </strong><br /> </p>
+<div class="wrapper w-full max-w-5xl mx-auto">
+    <header style="position: relative; background-color: white;">
+        <img src="comics/headergerahmt.jpg" alt="Header Image" class="mx-auto">
+        <div class="button-container">
+            <a href="about.html" class="button p-4">
+                <span>What is this?</span>
+            </a>
+            <a href="surprise.html" class="button p-4">
+                <span>Surprise you?</span>
+            </a>
+            <a href="comics.html" class="button p-4">
+                <span>To the comics</span>
+            </a>
+            <a href="infos.html" class="button p-4">
+                <span>Some infos</span>
+            </a>
+        </div>
+    </header>
 
-    <div class="filter-buttons">
-        <button class="btn btn-outline btn-success" data-filter="Monster">Monster</button>
-        <button class="btn btn-outline btn-success" data-filter="Girl">Girl</button>
-        <button class="btn btn-outline btn-success" data-filter="Planet">Planet</button>
-        <button class="btn btn-outline btn-success" data-filter="Batman">Batman</button>
-        <button class="btn btn-outline btn-success" data-filter="Action">Action</button>
-        <button class="btn btn-outline btn-success" data-filter="Spiderman">Spiderman</button>
-        <button class="btn btn-outline btn-success" data-filter="Flying">Flying</button>
-        <button class="btn btn-outline btn-success" data-filter="Thor">Thor</button>
-        <button class="btn btn-outline btn-success" data-filter="Fire">Fire</button>
+    <div class="content p-16">
+        <p class="py-7 text-center"> <strong> Comics </strong><br /> </p>
+
+        <div class="filter-buttons">
+            <button class="btn btn-outline btn-success" data-filter="Monster">Monster</button>
+            <button class="btn btn-outline btn-success" data-filter="Girl">Girl</button>
+            <button class="btn btn-outline btn-success" data-filter="Planet">Planet</button>
+            <button class="btn btn-outline btn-success" data-filter="Batman">Batman</button>
+            <button class="btn btn-outline btn-success" data-filter="Action">Action</button>
+            <button class="btn btn-outline btn-success" data-filter="Spiderman">Spiderman</button>
+            <button class="btn btn-outline btn-success" data-filter="Flying">Flying</button>
+            <button class="btn btn-outline btn-success" data-filter="Thor">Thor</button>
+            <button class="btn btn-outline btn-success" data-filter="Fire">Fire</button>
+        </div>
+
+
+        <button class="btn btn-outline btn-error" id="remove-filters">Remove Filters</button>
+
+        <div id="selected-filter"></div>
+        <br />
+
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 justify-items-center w-full">
+
+            <!-- The button to open Pop up -->
+            <label for="my-modal-1" class="image" >
+                <a class="relative group">
+                    <img src="Assets/pic1.jpg" alt="Image 2"  width="200" height="200" data-keywords="Monster,Girl,Planet">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
+
+
+            <!-- Pop up -->
+            <input type="checkbox" id="my-modal-1" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Comic Title</h3>
+                    <img src="Assets/pic1.jpg" alt="Image 2" >
+                    <p class="py-4">Description of the comic </p> <br />
+                    <p class="py-4">
+                        Keywords: <span class="modal-image-keywords"></span>
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal-1" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The button to open Pop up -->
+            <label for="my-modal-2"  class="image" >
+                <a class="relative group">
+                    <img src="Assets/pic2.jpg" alt="Image 2"  width="200" height="200" data-keywords="Monster,Batman,Action">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
+
+
+            <!-- Pop up -->
+            <input type="checkbox" id="my-modal-2" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Comic Title</h3>
+                    <img src="Assets/pic2.jpg" alt="Image 2" >
+                    <p class="py-4">Description of the comic </p> <br />
+                    <p class="py-4">
+                        Keywords: <span class="modal-image-keywords"></span>
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal-2" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The button to open Pop up -->
+            <label for="my-modal-3"  class="image">
+                <a class="relative group">
+                    <img src="Assets/pic3.jpg" alt="Image 2"  width="200" height="200" data-keywords="Spiderman,Flying,Action">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
+
+
+            <!-- Pop up -->
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Comic Title</h3>
+                    <img src="Assets/pic3.jpg" alt="Image 2" >
+                    <p class="py-4">Description of the comic </p> <br />
+                    <p class="py-4">
+                        Keywords: <span class="modal-image-keywords"></span>
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal-3" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The button to open Pop up -->
+            <label for="my-modal-4"  class="image">
+                <a class="relative group">
+                    <img src="Assets/pic4.jpg" alt="Image 2"  width="200" height="200" data-keywords="Thor,Girl">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
+
+
+            <!-- Pop up -->
+            <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Comic Title</h3>
+                    <img src="Assets/pic4.jpg" alt="Image 2" >
+                    <p class="py-4">Description of the comic </p> <br />
+                    <p class="py-4">
+                        Keywords: <span class="modal-image-keywords"></span>
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal-4" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- The button to open Pop up -->
+            <label for="my-modal-5"  class="image">
+                <a class="relative group">
+                    <img src="Assets/pic5.jpg" alt="Image 2"  width="200" height="200" data-keywords="Flying,Girl,Fire">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
+
+
+            <!-- Pop up -->
+            <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Comic Title</h3>
+                    <img src="Assets/pic5.jpg" alt="Image 2" >
+                    <p class="py-4">Description of the comic </p> <br />
+                    <p class="py-4">
+                        Keywords: <span class="modal-image-keywords"></span>
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal-5" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- The button to open Pop up -->
+            <label for="my-modal-6"  class="image">
+                <a class="relative group">
+                    <img src="Assets/pic6.jpg" alt="Image 2"  width="200" height="200" data-keywords="Nature,Happy">
+                    <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
+                        <p class="py-4 text-center">
+                            Keywords: <span class="image-keywords"></span>
+                        </p>
+                    </div>
+                </a>
+            </label>
+
+            <!-- Pop up -->
+            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                    <h3 class="font-bold text-lg">Comic Title</h3>
+                    <img src="Assets/pic6.jpg" alt="Image 2" >
+                    <p class="py-4">Description of the comic </p> <br />
+                    <p class="py-4">
+                        Keywords: <span class="modal-image-keywords"></span>
+                    </p>
+                    <div class="modal-action">
+                        <label for="my-modal-6" class="btn">Close</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-
-
-    <button class="btn btn-outline btn-error" id="remove-filters">Remove Filters</button>
-
-    <div id="selected-filter"></div>
-    <br />
-
-    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 justify-items-center w-full">
-
-        <!-- The button to open Pop up -->
-        <label for="my-modal-1" class="image" >
-            <a class="relative group">
-                <img src="Assets/pic1.jpg" alt="Image 2"  width="200" height="200" data-keywords="Monster,Girl,Planet">
-                <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
-                    <p class="py-4 text-center">
-                        Keywords: <span class="image-keywords"></span>
-                    </p>
-                </div>
-            </a>
-        </label>
-
-
-        <!-- Pop up -->
-        <input type="checkbox" id="my-modal-1" class="modal-toggle" />
-        <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="font-bold text-lg">Comic Title</h3>
-                <img src="Assets/pic1.jpg" alt="Image 2" >
-                <p class="py-4">Description of the comic </p> <br />
-                <p class="py-4">
-                    Keywords: <span class="modal-image-keywords"></span>
-                </p>
-                <div class="modal-action">
-                    <label for="my-modal-1" class="btn">Close</label>
-                </div>
-            </div>
-        </div>
-
-        <!-- The button to open Pop up -->
-        <label for="my-modal-2"  class="image" >
-            <a class="relative group">
-                <img src="Assets/pic2.jpg" alt="Image 2"  width="200" height="200" data-keywords="Monster,Batman,Action">
-                <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
-                    <p class="py-4 text-center">
-                        Keywords: <span class="image-keywords"></span>
-                    </p>
-                </div>
-            </a>
-        </label>
-
-
-        <!-- Pop up -->
-        <input type="checkbox" id="my-modal-2" class="modal-toggle" />
-        <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="font-bold text-lg">Comic Title</h3>
-                <img src="Assets/pic2.jpg" alt="Image 2" >
-                <p class="py-4">Description of the comic </p> <br />
-                <p class="py-4">
-                    Keywords: <span class="modal-image-keywords"></span>
-                </p>
-                <div class="modal-action">
-                    <label for="my-modal-2" class="btn">Close</label>
-                </div>
-            </div>
-        </div>
-
-        <!-- The button to open Pop up -->
-        <label for="my-modal-3"  class="image">
-            <a class="relative group">
-                <img src="Assets/pic3.jpg" alt="Image 2"  width="200" height="200" data-keywords="Spiderman,Flying,Action">
-                <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
-                    <p class="py-4 text-center">
-                        Keywords: <span class="image-keywords"></span>
-                    </p>
-                </div>
-            </a>
-        </label>
-
-
-        <!-- Pop up -->
-        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
-        <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="font-bold text-lg">Comic Title</h3>
-                <img src="Assets/pic3.jpg" alt="Image 2" >
-                <p class="py-4">Description of the comic </p> <br />
-                <p class="py-4">
-                    Keywords: <span class="modal-image-keywords"></span>
-                </p>
-                <div class="modal-action">
-                    <label for="my-modal-3" class="btn">Close</label>
-                </div>
-            </div>
-        </div>
-
-        <!-- The button to open Pop up -->
-        <label for="my-modal-4"  class="image">
-            <a class="relative group">
-                <img src="Assets/pic4.jpg" alt="Image 2"  width="200" height="200" data-keywords="Thor,Girl">
-                <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
-                    <p class="py-4 text-center">
-                        Keywords: <span class="image-keywords"></span>
-                    </p>
-                </div>
-            </a>
-        </label>
-
-
-        <!-- Pop up -->
-        <input type="checkbox" id="my-modal-4" class="modal-toggle" />
-        <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="font-bold text-lg">Comic Title</h3>
-                <img src="Assets/pic4.jpg" alt="Image 2" >
-                <p class="py-4">Description of the comic </p> <br />
-                <p class="py-4">
-                    Keywords: <span class="modal-image-keywords"></span>
-                </p>
-                <div class="modal-action">
-                    <label for="my-modal-4" class="btn">Close</label>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- The button to open Pop up -->
-        <label for="my-modal-5"  class="image">
-            <a class="relative group">
-                <img src="Assets/pic5.jpg" alt="Image 2"  width="200" height="200" data-keywords="Flying,Girl,Fire">
-                <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
-                    <p class="py-4 text-center">
-                        Keywords: <span class="image-keywords"></span>
-                    </p>
-                </div>
-            </a>
-        </label>
-
-
-        <!-- Pop up -->
-        <input type="checkbox" id="my-modal-5" class="modal-toggle" />
-        <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="font-bold text-lg">Comic Title</h3>
-                <img src="Assets/pic5.jpg" alt="Image 2" >
-                <p class="py-4">Description of the comic </p> <br />
-                <p class="py-4">
-                    Keywords: <span class="modal-image-keywords"></span>
-                </p>
-                <div class="modal-action">
-                    <label for="my-modal-5" class="btn">Close</label>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- The button to open Pop up -->
-        <label for="my-modal-6"  class="image">
-            <a class="relative group">
-                <img src="Assets/pic6.jpg" alt="Image 2"  width="200" height="200" data-keywords="Nature,Happy">
-                <div class="absolute bottom-0 w-[100%] h-16 bg-white text-black opacity-0 transition-all duration-500 ease-in-out transform group-hover:opacity-80 group-hover:translate-y-0">
-                    <p class="py-4 text-center">
-                        Keywords: <span class="image-keywords"></span>
-                    </p>
-                </div>
-            </a>
-        </label>
-
-        <!-- Pop up -->
-        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-        <div class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="font-bold text-lg">Comic Title</h3>
-                <img src="Assets/pic6.jpg" alt="Image 2" >
-                <p class="py-4">Description of the comic </p> <br />
-                <p class="py-4">
-                    Keywords: <span class="modal-image-keywords"></span>
-                </p>
-                <div class="modal-action">
-                    <label for="my-modal-6" class="btn">Close</label>
-                </div>
-            </div>
-        </div>
-
-    </div>
+</div>
 
     <script src="styles.js"></script>
 </body>
